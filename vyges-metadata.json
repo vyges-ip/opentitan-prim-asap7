@@ -3,24 +3,56 @@
   "x-version": "1.0.0",
   "name": "opentitan-prim-asap7",
   "version": "0.1.0",
-  "description": "ASAP7 PDK-specific implementations of OpenTitan primitives (and2, buf, clock_buf, clock_gating, etc). Target: ASAP7 7nm predictive process. Extracted from OpenTitan (lowRISC).",
+  "description": "IP imported from https://github.com/lowRISC/opentitan",
   "license": "Apache-2.0",
-  "maturity": "production",
-  "target": ["asic", "fpga"],
-  "design_type": ["digital"],
-  "created": "2026-02-19T06:12:02Z",
-  "updated": "2026-03-27T19:35:00Z",
-  "source": {"type": "git", "url": "https://github.com/lowRISC/opentitan", "private": false, "rtl_path": "rtl"},
-  "maintainers": [{"name": "Vyges", "email": "team@vyges.com", "github": "vyges"}],
-  "interfaces": [{"type": "bus", "direction": "slave", "protocol": "TL-UL", "port": "tl", "width": 32}],
-  "architecture": {"type": "peripheral", "features": ["ASAP7 7nm PDK-specific primitive implementations", "14 files, 400 lines"]},
-  "dependencies": [{"name": "opentitan-prim", "type": "library"}, {"name": "opentitan-tlul", "type": "bus"}],
-  "documentation": {"upstream": "https://opentitan.org/book/hw/ip/prim-asap7/"},
-  "artifacts": {"total_rtl_lines": 400},
-  "categories": {"primary": "library", "secondary": ["primitive", "pdk"], "tags": ["prim", "asap7", "7nm", "pdk", "opentitan"]},
-  "trust": {"verification_level": "silicon_proven", "tapeout_count": 3, "maintained": true, "last_activity": "2026-03-27"},
-  "asic": {"flavor": "digital", "technology": ["sky130A"]},
-  "fpga": {"toolchain": ["Vivado", "Yosys"]},
-  "keywords": ["prim-asap7", "opentitan", "tl-ul"],
-  "meta": {"template": {"generator": "manual (gold-standard pass 2026-03-27)"}, "schema": {"version": "1.0.0"}}
+  "maturity": "draft",
+  "target": [
+    "asic",
+    "fpga"
+  ],
+  "design_type": [
+    "digital"
+  ],
+  "created": "2026-03-27T23:05:48Z",
+  "updated": "2026-03-27T23:05:48Z",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/lowRISC/opentitan",
+    "commit": "7fbd85829ec6354ef6497df69536cefe862c1f5a",
+    "private": false,
+    "indexing": true
+  },
+  "maintainers": [
+    {
+      "name": "Vyges",
+      "email": "team@vyges.com",
+      "github": "vyges"
+    }
+  ],
+  "interfaces": [],
+  "parameters": [],
+  "architecture": {
+    "type": "peripheral",
+    "features": []
+  },
+  "categories": [
+    {
+      "main_category": "Miscellaneous",
+      "sub_category": "Custom Accelerators"
+    }
+  ],
+  "trust": {
+    "verification_level": "unknown",
+    "maintained": true
+  },
+  "_note": "AI enrichment failed. Manual population needed.",
+  "meta": {
+    "template": {
+      "generator": "upstream-sync-fallback",
+      "generated_at": "2026-03-27T23:05:48Z"
+    },
+    "schema": {
+      "version": "1.0.0"
+    }
+  }
 }
